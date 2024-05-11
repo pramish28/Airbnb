@@ -52,14 +52,18 @@ const Data = () => {
       {temp.map((data) => {
         return (
           <Card
+          id={data.id}
+          
             img={data.coverImg}
-            rating={data.stats.rating}
+             rating={data.stats.rating}
             reviewCount={data.stats.reviewCount}
-            country={data.location}
-            title={data.title}
-            price= {data.price}
-            openSpots={data.openSpots}
-          />
+             country={data.location}
+             title={data.title}
+             price= {data.price}
+          openSpots={data.openSpots}  
+       
+
+            />
         );
       })}
     </div>
